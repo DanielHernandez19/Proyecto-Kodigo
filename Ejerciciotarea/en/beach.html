@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../resource/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <script src="../resource/js/jquery.js"></script>
+    <link rel="icon" href="../resource/img/favicon-32x32.png">
+    <title>Surf City | El Salvador</title>
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="btn-menu" />
+        <label for="btn-menu"><i class="fa fa-bars"></i></label>
+        <a href="../en/index.html">
+            <img src="../resource/img/escudo.jpg" alt="">
+        </a>
+        <nav class="menu">
+            <ul>
+                <li><a href="../en/index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li class="submenu"><a href="#">Touristic <i class="fa fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="../en/beach.html"><i class="fas fa-umbrella-beach"></i> Surf City</a></li>
+                        <li><a href="../en/mountain.html"><i class="fas fa-tree"></i> Nature</a></li>
+                        <li><a href="../en/town.html"><i class="fas fa-city"></i> Towns</a></li>
+                    </ul>
+                </li>
+                <li><a href="../en/about.html"><i class="fas fa-location-arrow"></i> About Us</a></li>
+                <li class="submenu"><a href="#"><i class="fas fa-globe-americas"></i> Language <i
+                            class="fa fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="../es/playa.html">Spanish</a></li>
+                        <li><a href="../en/beach.html">English</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contenedor">
+        <h3 class="curso-titulo">Surf City.</h3>
+        <div class="curso">
+            <div>
+                <img src="../resource/img/el-tunco-1.jpg" alt="tunco-beach">
+            </div>
+            <div>
+                <h4 class="titulo-info">Tunco Beach</h4>
+                <p class="curso-texto">Place: <span>Tamanique, La Libertad</span></p>
+                <p class="curso-texto">What is?: <span> El Tunco beach as the capital of surfing in El Salvador. A beach
+                        that owes its name to the immense rock, semi-submerged in the sea, which in some remote time
+                        suggested the shape of a tunco or pig in Salvadoran.</span></p>
+                <p class="curso-texto"><span>Over the years, El Tunco has become a microcosm where you can breathe a
+                        cosmopolitan atmosphere, fun abounds and the “chiva” vibe. An obligatory pilgrimage destination
+                        for the international surfer and for those who seek to immerses themselves in the bohemian and
+                        carefree surf culture.</span></p>
+                <p class="curso-descripcion"><a href="https://elsalvador.travel/destination/el-tunco/en"
+                        class="boton">Read more</a></p>
+            </div>
+        </div>
+        <div class="curso1">
+            <div>
+                <h4 class="titulo-info1">El Zonte Beach</h4>
+                <p class="curso-texto">Place: <span> Chiltiupán, La Libertad</span></p>
+                <p class="curso-texto">What is?: <span> El Zonte is one of the most iconic surf destinations in El
+                        Salvador. This small coastal community is located at kilometer 53 of the Litoral highway, in the
+                        municipality of Chiltiupán, La Libertad.</span></p>
+                <p class="curso-texto"><span> The place retains its original bohemian and beach style, despite the fact
+                        that it has increased its offer of services to tourists.The area next to the El Zonte river
+                        offers numerous hostels, rental houses, hotels and restaurants, as well as surfboard rentals and
+                        surf lessons. Beyond the small estuary, to the west, there are private ranches and several small
+                        hotels, where you can also spend the day.</span></p>
+                <p class="curso-descripcion"><a href="https://elsalvador.travel/destination/el-zonte-beach/en"
+                        class="boton">Read more</a></p>
+            </div>
+            <div>
+                <img src="../resource/img/DestinationPlayaElZonteLL.jpg" alt="zonte-beach">
+            </div>
+        </div>
+        <div class="curso">
+            <div>
+                <img src="../resource/img/photo3jpg.jpg" alt="zunzal">
+            </div>
+            <div>
+                <h4 class="titulo-info">El Sunzal</h4>
+                <p class="curso-texto">Place: <span>Tamanique, La Libertad</span></p>
+                <p class="curso-texto">What is?: <span> The beach El Sunzal is almost certainly the beach where surfing
+                        was first practiced in El Salvador.</span></p>
+                <p class="curso-texto"><span> Since the first North American surfers arrived in the late sixties,
+                        looking for the perfect wave, this very long point of straight waves has been the favorite of
+                        locals and foreigners, due to its huge area, which can host dozens of surfers al at the same
+                        time, and especially its consistency, since it does not stop breaking even a single day of the
+                        year.</span></p>
+                <p class="curso-texto"><span>The beach Sunzal has two perfectly defined parts: the "outside", located at
+                        the furthest part of the coast, where a powerful wave is born which can run uninterrupted for
+                        almost 200 meters, offering an endless line and a wide wall to carry out all kinds of maneuvers,
+                        which invites and it´s suitable for those who ride a long board, short board or a boogie board.
+                        Then there is the "inside", or middle part, which usually creates its own series of waves, or is
+                        the product of the outer wave; When that happens, the run from start to end, can run for up to
+                        300 meters with about 40 seconds of pure joy and adrenaline.</span></p>
+                <p class="curso-descripcion"><a href="https://elsalvador.travel/destination/el-sunzal-beach/en/"
+                        class="boton">Read more</a></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(".submenu").click(function () {
+            $(this).children("ul").slideToggle();
+        });
+
+        $("ul").click(function (ev) {
+            ev.stopPropagation();
+        })
+    </script>
+</body>
+<footer>
+    <div class="contenedor-footer">
+        <div class="barra">
+            <h1>Turismo - El Salvador</h1>
+        </div>
+    </div>
+</footer>
+
+
+</html>

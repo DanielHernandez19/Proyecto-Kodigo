@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../resource/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <script src="../resource/js/jquery.js"></script>
+    <link rel="icon" href="../resource/img/favicon-32x32.png">
+    <title>El Salvador Travel</title>
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="btn-menu" />
+        <label for="btn-menu"><i class="fa fa-bars"></i></label>
+        <a href="../es/principal.html">
+            <img src="../resource/img/escudo.jpg" alt="">
+        </a>
+        <nav class="menu">
+            <ul>
+                <li><a href="../es/principal.html"><i class="fas fa-home"></i> Principal</a></li>
+                <li class="submenu"><a href="#">Turismo <i class="fa fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="../es/playa.html"><i class="fas fa-umbrella-beach"></i> Surf City</a></li>
+                        <li><a href="../es/naturaleza.html"><i class="fas fa-tree"></i> Naturaleza</a></li>
+                        <li><a href="../es/pueblos.html"><i class="fas fa-city"></i> Pueblos vivos</a></li>
+                    </ul>
+                </li>
+                <li><a href="../es/acercade.html"><i class="fas fa-location-arrow"></i> Acerca de</a></li>
+                <li class="submenu"><a href="#"><i class="fas fa-globe-americas"></i> Idioma <i
+                            class="fa fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="../es/principal.html">Español</a></li>
+                        <li><a href="../en/index.html">Inlgés</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contenedor">
+        <h3 class="curso-titulo">Bienvenidos</h3>
+        <div class="wrapper">
+            <div class="slider" id="slider">
+                <ul class="slides">
+                    <li class="slide" id="slide1">
+                        <a href="../es/pueblos.html">
+                            <p class="caption">Pueblos - Antiguo Cuscatlan</p>
+                            <img src="../resource/img/antiguo.jpg" alt="photo 1">
+                        </a>
+                    </li>
+                    <li class="slide" id="slide2">
+                        <a href="../es/playa.html">
+                            <p class="caption">Surf City - El Zonte</p>
+                            <img src="../resource/img/DestinationPlayaElZonteLL.jpg" alt="photo 3">
+                        </a>
+                    </li>
+                    <li class="slide" id="slide3">
+                        <a href="../es/naturaleza.html">
+                            <p class="caption">Naturaleza - Volcán de Santa Ana</p>
+                            <img src="../resource/img/Volcan-Ilamatepeq-Santa-Ana-2.jpg" alt="photo 6">
+                        </a>
+                    </li>
+                </ul>
+                <ul class="slider-controler">
+                    <li><a href="#slide1">&bullet;</a></li>
+                    <li><a href="#slide2">&bullet;</a></li>
+                    <li><a href="#slide3">&bullet;</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(".submenu").click(function () {
+            $(this).children("ul").slideToggle();
+        });
+        $("ul").click(function (ev) {
+            ev.stopPropagation();
+        })
+    </script>
+</body>
+
+<footer>
+    <div class="contenedor-footer">
+        <div class="barra">
+            <h1>Turismo - El Salvador</h1>
+        </div>
+    </div>
+</footer>
+
+</html>

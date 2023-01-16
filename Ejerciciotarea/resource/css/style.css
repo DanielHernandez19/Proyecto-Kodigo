@@ -1,0 +1,531 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bembo Std';
+}
+  
+header {
+    height: 5rem;
+    background: #3170ce;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+  
+#btn-menu {
+    display: none;
+}
+  
+header label {
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+  
+.menu ul {
+    display: flex;
+    list-style: none;
+    margin-right: 10px;
+    justify-content: flex-end;
+}
+  
+.menu ul ul{
+    display: none;
+    background: #ffffff;
+}
+
+.menu ul a{
+    color: #ffffff;
+} 
+
+.menu ul ul li a{
+    color: #3170ce;
+}
+
+.menu a {
+    display: block;
+    margin:15px 20px;
+    text-decoration: none;
+    line-height: 32px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+  
+.menu a:hover {
+    text-decoration:underline;
+}
+
+.menu ul ul li a:hover{
+    text-decoration: underline;
+}
+  
+.menu a li {
+    margin-left: 10px;
+}
+  
+.menu ul li:hover ul {
+    transition: all 0.3s ease;
+    display: block;
+    position: absolute;
+}
+
+h3{
+    font-size: 1.6rem;
+}
+
+h4{
+    font-size: 1.6rem;
+}
+
+.contenedor{
+    width: min(90%, 120rem);
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+
+.curso-titulo{
+    text-align: center;
+    padding: 3rem;
+    font-family: 'Bembo Std';
+    color: #1c1e4d;
+    padding-top: 100px;
+}
+
+.titulo-info{
+    color: #1c1e4d;
+    text-align: center;
+}
+
+.titulo-info1{
+    color: #ffffff;
+    text-align: center;
+}
+
+.curso-texto{
+    margin: 25px 0;
+    font-weight: bold;
+    font-family: 'Museo Sanz';
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+}
+
+.curso-descripcion{
+    text-align: center;
+}
+
+.curso-descripcion a{
+    text-decoration: none;
+}
+
+.curso .boton{
+    border: none;
+    padding: 1rem;
+    text-transform: uppercase;
+    background-color: #1c1e4d;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+}
+
+.curso1 .boton{
+    border: none;
+    padding: 1rem;
+    text-transform: uppercase;
+    color: #d2d2d2;
+    text-align: center;
+    display: inline-block;
+}
+
+.curso{
+    padding: 1rem 0;
+}
+
+.curso1{
+    padding: 1rem 0;
+}
+
+.curso1 img{
+    padding: 2rem;
+    width: 450px;
+}
+
+footer{
+    background: #3170ce;
+    color: #ffffff;
+    padding-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+span{
+    font-weight: normal;
+}
+
+.contenedor-footer{
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.contenedor > div {
+    background-color: #3170ce;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+  }
+  
+.contenedor > div:nth-child(2n) {
+    background-color: #fff;
+    color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+header a img{
+    width: 70px;
+    float: left;
+    padding-left: 16px;
+    padding-top: 16px;
+}
+
+
+@media (max-width: 768px) {
+    header{
+        position: fixed;
+        z-index: 100;
+    }
+    
+    header label {
+      display: block;
+      padding-top: 16px;
+      padding-left: 16px;
+      transition: all 0.4s ease;
+    }
+    
+    header a img{
+        float: right;
+        margin-top: -50px;
+        margin-right: 20px;
+    }
+
+    .menu {
+      position: fixed;
+      top: 64px;
+      left: 0;
+      width: 70%;
+      transform: translateX(-100%);
+      transition: all 0.3s;
+      z-index: 100;
+    }
+    
+    .menu ul {
+      flex-direction: column;
+      display: block;
+      background: #3170ce;
+    }
+
+    .menu ul ul li{
+      background-color: white;
+    }
+    
+    .menu ul ul li a{
+        color: #3170ce;
+    }
+    
+    .menu ul li:hover ul {
+      display: none;
+      position: relative;
+      background: #3170ce;
+    }
+
+    .menu a:hover {
+        text-decoration:underline;
+    }
+
+    .menu ul ul li a:hover{
+        text-decoration: underline;
+    }
+    
+    .menu a li {
+      position: absolute;
+      right: 16px;
+      line-height: 32px;
+    }
+    
+    #btn-menu:checked ~ .menu {
+      transform: translateX(0%);
+    }
+    
+    .boton{
+        display: block;
+    }
+    
+    .curso{
+        padding: 1rem 0;
+        position: relative;
+    }
+    
+    .curso1{
+        padding: 1rem 0;
+        position: relative;
+    }
+
+    .contenedor div{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contenedor .curso img{
+        width: 350px;
+    }
+
+    .contenedor .curso1 img{
+        width: 350px;
+    }
+
+    .wrapper {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slider{
+        position: relative;
+    }
+
+    .card{
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background: white;
+    }
+    
+}
+
+@media (min-width:768px) and (max-width:1500px){
+    .curso{
+        padding: 1rem 0;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+    
+    .curso1{
+        padding: 1rem 0;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 2rem;
+    }
+     
+    .curso img{
+        padding: 2rem;
+        width: 450px;
+    }
+
+    .curso1 img{
+        padding: 2rem;
+        width: 450px;
+    }
+
+
+    .slide {
+		width: 1200px;
+        padding-top: 50px;
+	}
+
+	.caption {
+		font-size: 96px;
+		bottom: 96px;
+		right: 50px;
+	}
+
+    .slider {
+        position: relative;
+        width: 800px;
+    }
+
+    .wrapper{
+        padding: 1rem 0;
+        display: grid;
+        column-gap: 2rem;
+    }
+
+    .card{
+        padding: 10px;
+        width: 400px;
+        position: relative;
+        background: white;
+        margin-left: 35%;
+        
+    }
+}
+
+@keyframes slide {
+	0% { transform: translateX(0); }
+	10% { transform: translateX(0); }
+
+	15% { transform: translateX(-100%); }
+	30% { transform: translateX(-100%); }
+
+	35% { transform: translateX(-200%); }
+	50% { transform: translateX(-200%); }
+}
+
+.slide {
+	width: 100%;
+	flex-shrink: 0;
+	animation-name: slide;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;;
+}
+
+.slides {
+	position: relative;
+	display: flex;
+	overflow: hidden;
+}
+
+.slides:hover .slide {
+	animation-play-state: paused;
+}
+
+.slider{
+    position: relative;
+}
+
+.slide img {
+	width: 100%;
+}
+
+.slide a {
+	width: 100%;
+	display: inline-block;
+}
+
+.caption {
+	color: #1c1e4d;
+	text-shadow: 1px 1px black;
+	font-size: 2.5rem;
+	position: sticky;
+}
+
+.slide:target {
+	animation-name: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+    z-index: 50;
+}
+
+.slider-controler {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	padding: 5px;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 60;
+}
+
+.slider-controler li {
+	margin: 0 0.5rem;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.slider-controler a {
+	display: inline-block;
+	vertical-align: top;
+	text-decoration: none;
+	color: white;
+	font-size: 1.5rem;
+}
+
+.card div{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    border-color: black;
+}
+
+.card div::before{
+    content: ' ';
+    position: absolute;
+    border-top: 30px solid transparent;
+    border-left: 400px solid white;
+    bottom: 0;
+}
+
+.card div img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    background-color: #ffffff;
+}
+
+section{
+    padding: 10px;
+    text-align: center;
+}
+
+section h2{
+    margin: .5rem 0;
+}
+
+section p{
+    margin: 1rem 0;
+}
+
+.card ul li{
+    list-style: none;
+    display: inline-block;
+    margin: .5rem .2rem;
+}
+
+.card ul li a{
+    text-decoration: none;
+    color: white;
+    background-color: #314652;
+    width: 30px;
+    height: 30px;
+    line-height: 30px !important;
+    border-radius: 50%;
+    transition: all .4 ease-in-out;
+}
+
+.card ul li a:hover{
+    transform: scale(1.2);
+}
+
+.card footer{
+    width: 100%;
+    height: 80px;
+    background-color: #314652;
+    color: white;
+    position: relative;
+}
+
+.card footer p{
+    padding: 30px;
+}
+
+.card footer::before{
+    content: ' ';
+    position: absolute;
+    border-bottom: 30px solid transparent;
+    border-left: 400px solid white;
+    top: 0;
+}

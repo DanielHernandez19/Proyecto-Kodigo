@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../resource/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../resource/js/jquery.js"></script>
+    <link rel="icon" href="../resource/img/favicon-32x32.png">
+    <title>About Us | El Salvador</title>
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="btn-menu" />
+        <label for="btn-menu"><i class="fa fa-bars"></i></label>
+        <a href="../en/index.html">
+            <img src="../resource/img/escudo.jpg" alt="">
+        </a>
+        <nav class="menu">
+            <ul>
+                <li><a href="../en/index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li class="submenu"><a href="#">Touristic <i class="fa fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="../en/beach.html"><i class="fas fa-umbrella-beach"></i> Surf City</a></li>
+                        <li><a href="../en/mountain.html"><i class="fas fa-tree"></i> Nature</a></li>
+                        <li><a href="../en/town.html"><i class="fas fa-city"></i> Towns</a></li>
+                    </ul>
+                </li>
+                <li><a href="../en/about.html"><i class="fas fa-location-arrow"></i> About Us</a></li>
+                <li class="submenu"><a href="#"><i class="fas fa-globe-americas"></i> Language <i
+                            class="fa fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="../es/acercade.html">Spanish</a></li>
+                        <li><a href="../en/about.html">English</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contenedor">
+        <h3 class="curso-titulo">About me.</h3>
+        <div class="card">
+            <div>
+                <img src="../resource/img/foto.jpg" alt="">
+            </div>
+            <section>
+                <h2>Daniel Hernandez</h2>
+                <h3>4th Year Student of Systems Engineering</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/danielalexanderhdez1901" class="fa fa-facebook"></a></li>
+                    <li><a href="https://www.linkedin.com/in/daniel-hern%C3%A1ndez-2001/" class="fa fa-linkedin"></a>
+                    </li>
+                </ul>
+            </section>
+            <footer>
+                <p>Create by Daniel Hernández</p>
+            </footer>
+        </div>
+    </div>
+    <script>
+        $(".submenu").click(function () {
+            $(this).children("ul").slideToggle();
+        });
+
+        $("ul").click(function (ev) {
+            ev.stopPropagation();
+        })
+    </script>
+</body>
+<footer>
+    <div class="contenedor-footer">
+        <div class="barra">
+            <h1>Turismo - El Salvador</h1>
+        </div>
+    </div>
+</footer>
+
+</html>
